@@ -1,0 +1,41 @@
+Pobranie Go:
+	https://golang.org/dl/
+Po pobraniu trzeba otworzyć plik przy pomocy hashu ze strony:
+(można):
+SHA256 Checksum:
+	cd ../
+	cd Downloads/
+	openssl sha -sha256 go1.16.4.windows-amd64.msi
+Wygenerowany kod będzie taki sam jak podany na stronie.
+Czyli pobraliśmy dokładnie to co chcieliśmy.
+Instalacja prosta, nic nie wymaga do ustawiania.
+
+
+
+Restart bash -> zamknięcie, uruchomienie Git Bash ponownie.
+
+
+Zmienne środowiskowe dla Go (czyli zainstalował się poprawnie i będzie działać):
+	go env
+
+
+
+Sprawdzenie wersji Go:
+	go version
+
+
+
+Komendy Go:
+	go help
+
+
+Opis flag możliwych do użycia np. przy env i trochę opisane samo env:
+	go help env
+
+
+
+Opis/flagi gopath:
+	go help gopath
+	
+	
+	

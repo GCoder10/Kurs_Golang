@@ -1,0 +1,44 @@
+https://play.golang.org/
+Golang jest językiem stworzonym przez firmę Google, łączącym jednocześnie to co najlepsze z innych języków,
+jest to bardzo rozbudowane środowisko programistyczne, przeznaczone idealnie do pracy w mega dużych serwisach,
+wykorzystujacy potencjał działań wielowątkowych nawet w systemach rozproszonych.
+Dogłębne poznanie tego środowiska może zająć sporo czasu z uwagi na fakt jego obszerności.
+Język ten oferuje jednocześnie jasny i czytelny kod dla użytkownika oraz szybkość jego wykonania ze strony
+komputera.
+W przypadku innych języków, jedne z najszybszych dla komputera są C/C++ natomiast ich czytelność dla
+użytkownika, w szczególności na początku, jest trudna do nauczenia się.
+Natomiast języki łatwiejsze dla człowieka w nauce, takie jak Python, działają o wiele wolniej niż taki
+C/C++ od strony komputera.
+W sumie to logiczne, Python nie wymaga tak obszernej nauki jeżeli chodzi o jego złożoność tak jak w 
+przypadku bardziej dogłębnego poznania C/C++
+Golang został stworzony właśnie w celu połączenia tych cech, łatwości nauki i dogłębnego poznania środowiska
+i łatwości jego kompilacji/działania od strony komputera.
+Póki co to praktycznie jedyny taki język, aż tak dobrze wykonany od wielu tak skrajnie dalekich od siebie
+stron/aspektów (łatwość w dogłębnym poznaniu, czytelność, szybkość działania/kompilacji)
+
+
+========================================================================================================
+Przygotowanie do używania Golang:
+	- Używanie terminala: 
+		- CMD -> w przypadku systemu Windows
+		- Bash/Shell -> w przypadku Mac, Linux, Unix
+	- Bash w Windows:
+		- https://git-scm.com/downloads
+		- Instalacja GIT:
+			- Select Components:
+				Samo 'Git Bash Here' w 'Windows Explorer Integration'
+			- Domyślny edytor: Notepad++
+			- 'Use Git from Git Bash only'
+			- 'Use the OpenSSL library'
+			- 'Checkout Windows-style, commit Unix-style line endings'
+			- 'Use MinTTY (the default terminal of MSYS2)'
+			- 'Enable Git Credential Manager'
+			- 'Enable file system caching'
+		- Windows -> 'bash' w polu wyszukiwania -> git bash
+		- Teraz jest dostęp do komend Bash/Shell, np. ls, pwd, clear
+		- W sumie dobry trening początkowy przed nauką Linux'a
+		pwd - obecny folder, w którym się znajdujemy
+		ls     Co się znajduje w tym obecnym folderze
+		ls -la Więcej informacji o rzeczach w tym folderze
+		
+		

@@ -1,0 +1,93 @@
+pwd - obecny katalog, w którym się znajdujemy.
+ls - pokazanie plików, folderów w tym obecnym folderze:
+	Widoczne są pliki/foldery niewidoczne w standardowym widoku graficznym.
+ls -la - List z flagą list all, pokazanie dodatkowo informacji o tych plikach:
+	[uprawnienia: dla właściciela, grupy, świata]
+	rwx - Read Write Execute
+	
+	Dostęp jest reprezentowany przez liczby:
+		r w x
+		4 2 1
+	d na samym początku - folder - directory
+	- na samym początku - ukryty plik
+	.NazwaPliku - ukryty plik
+	
+	[ilość bajtów wielkości]
+	[data ostatniego dostępu]
+	[data ostatniej modyfikacji]
+	
+clear
+cd - zmiana folderu, w którym się znajdujemy
+[Używanie TAB dla podpowiedzi, uzupełnienia reszty nazwy folderu]
+	cd Documents/
+	pwd wskaże /Documents
+	Przejście do folderu ze spacją w nazwie:
+	cd Nazwa\ Folderu/
+
+
+
+Przejście do tyłu o jeden folder:
+	cd ../
+	
+	
+mkdir - make directory - stworzenie katalogu
+	mkdir tempONE tempTWO tempTHREE
+	Możliwość tworzenia wielu katalogów na raz
+	cd temp -> wyświetli 3 możliwe do wyboru
+	ls
+
+
+
+
+touch - tworzenie pliku:
+	touch temp.txt
+	ls
+
+
+
+
+Edytowanie pliku tekstowego przy pomocy super prostego i lekkiego edytora z bash:
+	nano temp.txt
+	CTRL + X , ENTER -> zapisanie pliku i wyjście z edycji
+
+
+
+Wyświetlenie zawartości pliku txt:
+	cat temp.txt
+	
+	
+	
+Wyświetlenie zawartości zmiennych środowiskowych:
+	env - Environment
+	
+	
+Usuwanie np. pliku txt:
+	rm temp.txt
+	ls
+	
+Usuwanie wielu plików/katalogów na raz:
+	cd ../
+	rm -rf tempTHREE/ tempTWO/
+	ls
+	
+	
+Wyszukiwanie tylko linijek z danym słowem:
+	touch temper.txt
+	nano temper.txt
+	CTRL + X, ENTER
+	cat temper.txt
+	cat temper.txt | grep line
+	cat temper.txt
+
+
+
+Wyszukiwanie przy pomocy grep tylko określonych plików za pomocą ls:
+	ls | grep -i Moja\ muzyka/
+	cd ../
+	ls | grep -i documents
+
+
+
+
+Git Bash:
+	i teraz jest taki w sumie emulator powłoki bash/shell w Windows 10
