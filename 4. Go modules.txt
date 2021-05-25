@@ -1,0 +1,7 @@
+Moduły - działają obok obszaru roboczego, importowanie modułów w celu
+poszerzenia funkcjonalności samego kodu i/lub obszaru roboczego.
+Go jest bardzo statyczny, stabilny, nie zmienia się tak bardzo
+jak inne środowiska podczas pracy z modułami.
+
+
+Zarządzanie pakietami.

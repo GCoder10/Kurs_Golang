@@ -1,0 +1,6 @@
+Zmienne środowiskowe mogą być inne dla każdego użytkownika PC
+Są to takie zmienne, które mogą być używane ogólnie przez PC w celu 
+rozwiązywania jakiś zadań/problemów, współpracowania z np. środowiskiem
+programistycznym.
+
+PPM na 'ten komputer' -> właściwości -> Zaawansowane ustawienia systemu -> Zmienne środowiskowe

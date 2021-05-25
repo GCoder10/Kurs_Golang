@@ -1,0 +1,55 @@
+1. Przygotowanie tak PC, aby był gotowy do pracy a sama przestrzeń robocza była czytelna:
+	- 3 foldery przechowujące informacje podczas kompilacji:
+		bin - informacje podczas kompilacji
+		pkg - zewnętrzne pakiety używane w naszym kodzie
+		src - źródła dla projektu: przestrzenie nazw, zarządzanie pakietami.
+
+
+
+2. Będzie używanie 'go get' do zewnętrznych pakietów:
+	go help get
+	Info o 'go get' w bash/shell
+	
+
+
+3. GOPATH -> zmienna środowiskowa do wskazywania na obszar roboczy
+4. GOROOT -> zmienna środowiskowa do wskazywania na binarną instalację Go, środowisko Go 
+	dzięki tej zmiennej wie, gdzie szukać wszystkiego, co niezbędne, aby uruchomić np. 
+	nasz projekt Go.
+	Komputer szuka w zmiennych środowiskowych lokalizacji początkowych plików danego
+	środowiska bądź programu, od których będzie wstanie uruchomić daną aplikację/środowisko.
+
+
+
+5. Użycie bash/shell do ustawienia tego:
+	Ustawienie bash do używania w określonym folderze:
+		Użycie pwd -> aktualny folder, 
+		cd ../ -> wychodzenie o jeden folder wyżej, 
+		ls -> listowanie folderów w aktualnym folderze, 
+		cd Nazwa\ folderu -> przejście do konkretnego folderu,
+		pwd -> sprawdzenie dla pewności, czy jesteśmy gdzie trzeba.
+	
+	Utworzenie 3 niezbędnych folderów jednocześnie:
+		mkdir bin pkg src
+		ls
+	
+	
+	Ustawienie zmiennej środowiskowej GOPATH na aktualny goworkspace:
+		C:\github\Kurs Golang\Kurs_Golang\goworkspace
+		go env 
+		Aktualnie GOPATH jest ustawiony na:
+			GOPATH=C:\Users\Acer\go
+		PPM na 'ten komputer' -> właściwości -> Zaawansowane ustawienia systemu -> Zmienne środowiskowe
+		GOPATH, 'nowa' lub 'edytuj' jeżeli już jest
+		
+		
+	Zmienna środowiskowa GOROOT: Sprawdzić, czy przypisana jest dobra lokalizacja:
+		Instalacja Go, lokalizacja zainstalowanego Go
+		
+		
+	Ustawienie zmiennej środowiskowej GOBIN:
+		PPM na 'ten komputer' -> właściwości -> Zaawansowane ustawienia systemu -> Zmienne środowiskowe
+		GOBIN, 'nowa' lub 'edytuj' jeżeli już jest
+		C:\github\Kurs Golang\Kurs_Golang\goworkspace\bin
+		go env
+		

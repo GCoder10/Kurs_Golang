@@ -1,0 +1,35 @@
+Zintegrowane Środowisko Programistyczne, Integrated Development Environment
+Np. Python takie ma, czyli samo zainstalowane środowisko oferuje taki edytor kodu od swojej strony, 
+który generalnie nie musi być taki zły.
+Większość jednak programistów będzie używać innych edytorów kodu, bardziej rozbudowanych 
+(rozbudowany =/= lepszy)
+Inne, naprawde dobre:
+	Visual Studio Code
+	JetBrains Goland
+	Atom.io
+	Sublime
+	
+W moim przypadku będzie to VSC z dodatkami dla Golang:
+	Go by Go Team at Google
+	Wyskakujące okienka z Go -> Install All
+	
+	
+Napisanie i działanie pierwszego programiku w Go:
+		package main
+
+		import "fmt"
+
+		func main() {
+			fmt.Println("hello class")
+		}
+		
+		W terminalu VSC:
+			go run hello.go
+			
+Można także uruchomić hello.go z poziomu bash/shell w Git Bash:
+	przejście do lokalizacji,
+	go run hello.go
+	
+	
+Pobieranie repo przy pomocy Git Bash:
+	go get -d github.com/repo

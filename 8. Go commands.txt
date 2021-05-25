@@ -1,0 +1,28 @@
+go version -> wersja Go.
+go env -> Zmienne środowiskowe używane przez Go w systemie.
+go help -> Polecenia dostępne w Go i zarazem w pomocy.
+go help fmt -> używanie fmt do automatycznego formatowania kodu.
+
+
+Używanie fmt:
+	- w Git Bash przejście do pliku hello.go, niesformatowanego kodu
+	- go fmt / go fmt hello.go
+	- go fmt ./... -> formatowanie wszystkiego w tym katalogu.
+	
+go run hello.go -> Uruchomienie pliku Go
+go build hello.go -> Stworzenie pliku .exe z pliku Go
+go install hello.go -> Instalacja, stworzenie pliku .exe w folderze bin naszego workspace
+go install *.go -> wszystkie pliki w tym folderze z rozszerzeniem go
+
+
+
+$ hello.exe
+bash: hello.exe: command not found
+PPM na 'ten komputer' -> właściwości -> Zaawansowane ustawienia systemu -> Zmienne środowiskowe
+Path -> Edycja -> Nowa
+C:\github\Kurs Golang\Kurs_Golang\goworkspace\bin
+OK
+
+
+hello.exe z dowolnego miejsca w bash/shell uruchomi nasz plik wykonywalny .exe z uwagi na 
+ustawioną ścieżkę do folderu bin w zmiennej środowiskowej Path.
