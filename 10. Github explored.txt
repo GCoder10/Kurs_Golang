@@ -1,0 +1,94 @@
+Git Bash:
+	Pobieranie repo:
+		go get github.com/NazwaKontaGithub/NazwaRepo
+		
+
+Pobieranie repo bezpośrednio ze strony github.com:
+	Przy pomocy HTTPS
+	Kiedyś jeszcze było (może teraz znowu jest) przy pomocy SSH:
+		Trzeba manualnie stworzyć klucz SSH na PC.
+		Przejście do folderu:
+		c/Users/NazwaUżytkownika/.shh
+		Są różne pliki w tym folderze:
+			id_rsa
+			id_rsa.pub
+			
+			Klucz użytkownika:
+			Szyfrowanie symetryczne, teraz my możemy zaszyfrować 
+			i wysłać do kogoś, ktoś z tym kluczem będzie mógł to
+			odczytać:
+				id_rsaTwo
+			
+			Klucz publiczny:
+			Pozwala na zaszyfrowanie z tym kluczem, nikt inny na świecie
+			tego nie odszyfruje, szyfrowanie asymetryczne:
+				id_rsaTwo.pub
+				
+				
+			known_hosts
+			
+		Tworzenie klucza swojego ssh:
+		Git Bash:
+			 ~/.ssh
+			$ ssh-keygen -t rsa
+			Generating public/private rsa key pair.
+			Enter file in which to save the key (/c/Users/Acer/.ssh/id_rsa): rsa_THREE
+			Enter passphrase (empty for no passphrase):
+			Enter same passphrase again:
+			Your identification has been saved in rsa_THREE
+			Your public key has been saved in rsa_THREE.pub
+			The key fingerprint is:
+			SHA256:em1Q9c1N4yX8KTTv6eZaDPBlB4lFVYescdKgAF12U1M Acer@LAPTOP-B05MDC0I
+			The key's randomart image is:
+			+---[RSA 3072]----+
+			|      .o..o =XB*E|
+			|        .o ++=OB=|
+			|          o..=+=*|
+			|         .  +.ooo|
+			|        S    oo .|
+			|       . o    oo |
+			|      . . o   .o |
+			|       . .    .o |
+			|             .+. |
+			+----[SHA256]-----+
+
+		ls -la:
+			-rw-r--r-- 1 Acer 197121 2610 May 26 11:51 rsa_THREE
+			-rw-r--r-- 1 Acer 197121  574 May 26 11:51 rsa_THREE.pub
+			
+			
+			
+		Przeczytanie rsa_THREE.pub:
+			cat rsa_THREE.pub:
+				ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCiGHUpfvrp/
+				pnpWVjyqjlUUWI7pNpmECY11jevQR/fY0QDs2kqU/
+				z01Iv2tJHXH4L/
+				hfrSTgDLjo+WvkKTjYp+2kIIraesYIUDE4BCZWreIwPHlD61c
+				kXiqNsYKFdHPZNSvrTbyeK12AkK2Ve2hup718dB3tq51mrskHOj
+				LeiVF9OkVSPkxvesHjSNsa3faOzWtAPo3efdtqaKcSZEsPWaO1P
+				MZQDJu/XZ2ehpKv/5o7QtQ0pGWK0yrrt2J+LEkTozQOF+zo00na
+				2uu1taOlGFPbelyKIrCn7zDBqf8D8ZYQVOlAxkXECs/YR81AVGt
+				jaDFS5b4M11VWJAH1f+YbAcohWGvQ2qelAEQXkXYQtoiINe4Ng
+				uiIwIDqn5B67wSVcAKMqOBcVggZ6pvO4otX6L2W2xE+3POgFgnZ
+				+PAqdn7YfJvbVyFXBzMvz6tX4ScpV0b0hOI5S8WHRfNPu/hAphAs
+				+vEACoK0zC5weCFWp/kGm4wDiQMgFQ6s9cwkbrEd8= 
+				Acer@LAPTOP-B
+	
+		
+		Konto Github -> Ustawienia konta -> SSH and GPG keys
+		Add new SSH
+		Skopiowanie całej zawartości rsa_THREE.pub
+		
+		
+		Powrót do repo cd:
+			cd Kurs\ Golang/Kurs_Golang/goworkspace/
+		git clone SkopiowanyLinkz_Github.com_zOpcji_CloneWithSSH
+		
+		
+Sprawdzanie statusu (zmian) w plikach w folderze z plikami repo:
+	git status
+	
+Commitowanie zmian:
+	git add --all
+	git commit -m "zmiany"
+	git push

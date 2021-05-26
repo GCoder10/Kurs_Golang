@@ -1,0 +1,52 @@
+Git jako główny przykład do budowania aplikacji do kontroli wersji.
+Github
+GitLab
+Wracanie do poprzedniej wersji swojego programu/projektu w razie czego.
+=================================
+Stworzenie pliku:
+	touch .gitignore
+	Plik do wskazywania na pliki/foldery do zignorowania przez system kontroli wersji Git
+	nano .gitignore
+	Wpisanie tych plików/folderów
+	
+Git Bash:
+
+	Przejście do odpowiedniej lokalizacji:
+		cd ../
+		cd ../ 
+		cd github/Kurs\ Golang/Kurs_Golang/
+
+	Stworzenie pliku:
+		touch .gitignore
+
+	Edycja:
+		nano .gitignore
+		CTRL + X, ENTER
+		
+	Sprawdzenie:
+		ls -la
+		cat .gitignore
+		
+		
+W np. takim edytorze nano znak ^ oznacza CTRL.
+
+Inicjalizacja pustego repo:
+		git init
+		ls -la
+		Folder .git/
+	
+		git add --all
+		git commit -m "first commit; adds gitignore"
+	
+	Określenie miejsca, w którym pracujemy, i to miejsce jest "remote from me", zdalne, daleko ode mnie.
+	Origin -> źródło, z którego wszystko przychodzi.
+		git remote add origin git@github.com:NazwaKontaGithub/NazwaRepo.git
+		
+	Pushowanie czegoś do master branch.
+		git push -u origin master
+		
+		
+Po dodaniu plików, po pracy, commit do swojego nowego repo:
+		git add --all
+		git commit -m "new file"
+		git push

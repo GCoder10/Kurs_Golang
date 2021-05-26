@@ -1,0 +1,25 @@
+Zarządzanie pakietami:
+	Zależności
+	
+Kiedyś to nie było takie proste, udostępniać kod, żeby inni mogli go implementować u siebie, aby
+uzyskiwać jakieś zamierzone efekty, teraz są menedżery pakietów do tego.
+
+Jeden z najpopularniejszych (np. przy Angularze jest):
+npm - Node Package Manager
+
+Używanie zewnętrznych pakietów napisanych przez inne osoby niesie za sobą pewne komplikacje:
+	Backdoor
+	Bezpieczeństwo
+	Spowolnienie naszego API
+	Długa kompilacja
+	...
+	
+Dlatego też firmy często piszą całkowicie swoje moduły do projektu, nie narażając się w ten sposób
+na powyższe nieprzyjemności.
+
+
+Dodatkowo, korzystanie z zewnętrznych pakietów niesie za sobą:
+	Zależności.
+	Czyli że pakiet, który pobraliśmy do naszego projektu jest zależny jeszcze od
+	kolejnych pakietów, kolejnych innych osób, co tylko pomnaża niekorzystne działanie
+	takich pakietów w oficjalnym np. firmowym projekcie w danym środowisku.
